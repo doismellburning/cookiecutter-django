@@ -1,4 +1,3 @@
 test:
     post:
-        - cd loremipsum
-        - tox
+        - "cd loremipsum && tox"
