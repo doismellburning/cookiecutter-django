@@ -1,0 +1,10 @@
+[run]
+source = {{ cookiecutter.repo_name }}
+branch = True
+omit =
+	{{ cookiecutter.repo_name }}/*/migrations/*
+	{{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}/wsgi.py
+
+[report]
+fail_under = 100
+show_missing = True
