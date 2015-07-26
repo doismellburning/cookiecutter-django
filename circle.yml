@@ -1,5 +1,7 @@
 test:
     post:
         - "cd loremipsum && tox"
-        - "cd loremipsum && tox -e honcho":
+        - "PORT=31337 cd loremipsum && tox -e honcho":
             background: true
+        - "sleep 10"
+        - "curl --fail http://localhost:31337/"
