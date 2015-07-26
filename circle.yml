@@ -4,4 +4,4 @@ test:
         - "cd loremipsum && tox -e honcho":
             background: true
         - "sleep 10"
-        - "curl --fail http://localhost:31337/  # Hardcoded in tox.ini"
+        - "curl --fail http://localhost:31337/ || cat nohup.out  # Port hardcoded in tox.ini"
