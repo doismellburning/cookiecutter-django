@@ -1,0 +1,18 @@
+[run]
+source = {{ cookiecutter.repo_name }}
+branch = True
+omit =
+	{{ cookiecutter.repo_name }}/*/migrations/*
+	{{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}/wsgi.py
+
+[report]
+fail_under = 100
+show_missing = True
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    raise AssertionError
+    raise NotImplementedError
+    if 0:
+    if __name__ == .__main__.:
