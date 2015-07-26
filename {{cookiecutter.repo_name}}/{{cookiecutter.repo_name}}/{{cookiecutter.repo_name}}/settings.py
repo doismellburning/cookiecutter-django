@@ -81,3 +81,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# django12factor
+# https://django12factor.readthedocs.org/
+
+import django12factor
+_custom_settings = [
+]
+d12f = django12factor.factorise(custom_settings=_custom_settings)
+
+ALLOWED_HOSTS = d12f.get('ALLOWED_HOSTS')
+DATABASES = d12f.get('DATABASES')
+DEBUG = d12f.get('DEBUG')
+LOGGING = d12f.get('LOGGING')
+SECRET_KEY = d12f.get('SECRET_KEY')
