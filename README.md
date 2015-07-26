@@ -18,6 +18,7 @@ Naturally, everything I exclude from this is a pointless opinionated extra, and 
 * Dependencies in `requirements.txt`
 * Test dependencies in `requirements-test.txt`
 * `Procfile` for Heroku
+* [`django12factor`](https://django12factor.readthedocs.org/) to get configuration from the environment
 * ...and not much else!
 
 ## Usage
