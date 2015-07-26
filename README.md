@@ -17,6 +17,7 @@ Naturally, everything I exclude from this is a pointless opinionated extra, and 
 * Tox configuration
 * Dependencies in `requirements.txt`
 * Test dependencies in `requirements-test.txt`
+* `Procfile` for Heroku
 * ...and not much else!
 
 ## Usage
