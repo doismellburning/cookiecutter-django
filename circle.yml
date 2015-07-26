@@ -1,7 +1,7 @@
 test:
     post:
         - "cd loremipsum && tox"
-        - "PORT=31337 cd loremipsum && tox -e honcho":
+        - "cd loremipsum && tox -e honcho":
             background: true
         - "sleep 10"
-        - "curl --fail http://localhost:31337/"
+        - "curl --fail http://localhost:31337/  # Hardcoded in tox.ini"
