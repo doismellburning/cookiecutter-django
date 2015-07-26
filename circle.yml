@@ -3,5 +3,5 @@ test:
         - "cd loremipsum && tox"
         - "cd loremipsum && tox -e honcho":
             background: true
-        - "sleep 10"
+        - "sleep 15"
         - "curl --fail http://localhost:31337/ || (status=$? ; tail -n 1000 $CIRCLE_ARTIFACTS/std*.txt ; exit $status)  # Port hardcoded in tox.ini"

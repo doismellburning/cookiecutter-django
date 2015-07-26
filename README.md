@@ -19,6 +19,7 @@ Naturally, everything I exclude from this is a pointless opinionated extra, and 
 * Test dependencies in `requirements-test.txt`
 * `Procfile` for Heroku
 * [`django12factor`](https://django12factor.readthedocs.org/) to get configuration from the environment
+* [`WhiteNoise`](http://whitenoise.evans.io/en/latest/) for serving static files
 * ...and not much else!
 
 ## Usage
