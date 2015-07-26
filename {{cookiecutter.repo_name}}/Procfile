@@ -1,1 +1,1 @@
-web: python {{cookiecutter.repo_name}}/manage.py runserver 0.0.0.0:$PORT
+web: gunicorn --config gunicorn_conf --chdir {{cookiecutter.repo_name}} --bind [::]:$PORT {{cookiecutter.repo_name}}.wsgi
