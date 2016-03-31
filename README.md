@@ -11,7 +11,7 @@ Naturally, everything I exclude from this is a pointless opinionated extra, and 
 
 ## Features
 
-* Django 1.8
+* Modern Django (Unless I missed a requires.io PR)
 * My preferred "Django project as a subdirectory of the repository root" layout
 * 100% test coverage
 * Tox configuration
